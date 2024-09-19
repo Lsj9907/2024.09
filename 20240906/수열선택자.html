@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>수열선택자</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .box{
+            list-style: none;
+            font-weight: bold;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box li{
+            width: 100px; height: 100px;
+            margin: 0;
+        }
+        .container{
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            margin: 0 auto;
+            border: 3px #000 solid;
+            justify-content: center;
+        }
+        .container li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ddd;
+            border-radius: 50% 50%;
+            margin: 10px;
+        }
+        .container p{
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px; height: 100pxs;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 3px solid #000;
+        }
+        .wrapper p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ddd;
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .wrapper div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ddd;
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>수열선택자 - 의사클래스</h1>
+    <ul class="box container">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <p>p8</p>
+        <p>p9</p>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <p>19</p>
+        <p>20</li>
+        <p>21</p>
+        <li>22</li>
+    </ul>
+
+    <div class="box wrapper">
+        <p>w01</p>
+        <p>w02</p>
+        <p>w03</p>
+        <p>w04</p>
+        <div>d05</div>
+        <div>d06</div>
+        <p>w07</p>
+        <p>w08</p>
+        <p>w09</p>
+        <p>w10</p>
+        <p>w11</p>
+        <p>w12</p>
+        <p>w13</p>
+        <p>w14</p>
+    </div>
+</body>
+</html>

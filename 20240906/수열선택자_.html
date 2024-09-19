@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>수열선택자</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+       .box{
+        list-style: none;
+        margin: 0 auto; padding: 0;
+        font-weight: bold;
+        text-align: center;
+        border: 3px solid #000;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 360px;
+        margin-bottom: 20px;
+       }
+       .box li,
+       .box p,
+       .box div{
+        width: 100px; height: 100px;
+        margin: 10px;
+        background-color: #ddd;
+        border-radius: 50%;
+        line-height: 100px;
+        box-sizing: border-box;
+       }
+       /*
+        수열 선택자(< 의사 선택자(요소의 상태나 위치) < 가상선택자)
+        :first-child {} 같은 부보를 둔 자식들 중 첫번째 자식
+        :last-child {} 같은 부모를 둔 자식들 중 마지막 자식
+        :nth-child(n) {} 같은 부모를 둔 자식들 중 n번째 자식
+
+        :first-of-type {} 같은 부모를 둔 자식들 중 '같은 타입'의 첫번째 자식
+        :last-of-type {} 같은 부모를 둔 자식들 중 '같은 타입'의 마지막 자식
+        :nth-of-type(n) {} 같은 부모를 둔 자식들 중 '같은 타입'의 n번째 자식
+
+        (even) 짝수
+        (odd) 홀수
+        (3n+1) 3개를 기준을 첫번째
+        (3n) 3번째
+       */
+
+       .box li:first-child{ /* 같은 부모를 둔 자식들 중 처음 나오는 요소가 li인 경우 적용*/
+        background-color: orange;
+       }
+       .container p:first-child{ /* 같은 부모를 둔 자식 중에 처음 나오는 요소가 p가 아니기 때문에 적용x */
+        background-color: red;
+       }
+       .box p:first-of-type{ /* 같은 부모 안에서 같은 타입의 자식들 중 첫번째 타임에 적용 */
+        background-color: tomato;
+       }
+       .box p:last-child{ /* 가장 마지막에 나오는 자식이 p여야지만 적용 */
+        background-color: lightblue;
+       }
+       .box div:last-of-type{ /* 같은 부모 안에서 같은 타입의 자식들 중 마지막 타입에 적용 */
+        background-color: lightcoral;
+       }
+       .box p:last-of-type{ /* 가장 마지막에 나오는 p에 적용 */
+        background-color: #0b8494;
+       }
+       .box li:nth-child(6){ /* 자식들 중 6번째 위치에 li가 있으면 적용 */
+        border: 3px solid #e85c0d;
+       }
+       .box li:nth-child(9){ /* 자식들 중 9번째 위치에 li가 없어서 적용 x */
+        border: 3px saddlebrown solid;
+       }
+       .box p:nth-of-type(4){ /* 자식들 중 같은 타입의 4번쨰 p에 적용 */
+        border: 3px solid maroon;
+       }
+       .container li:nth-child(even) { /* 짝수 위치의 자식 li에만 적용 */
+        background-color: #a2ca71;
+       }
+       .box li:nth-child(odd){ /* 홀수 위치의 자식 li에만 적용 */
+        background-color: #b4d6cd;
+       }
+       .wrapper :nth-child(odd){ /* 실제하는 요소 없이 작성시 요소 구분 없이 적용 */
+        background-color: #7fa1c3;
+       }
+       .container li:nth-child(3n+2) { /* 3개를 기준으로 2번째 적용 */
+        border-radius: 50% 6%;
+        background-color: yellow;
+       }
+       .container :nth-child(5n+5){ /* 5개를 기준으로 5번째 */
+        border: 3px dotted #000;
+       }
+       .wrapper :nth-child(4n+3){ /* 4의 배수에서 3번째 */
+        border: 6px double dodgerblue;
+        color: #FFF;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>수열선택자 - 의사클래스</h1>
+    <ul class="box container">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <p>p8</p>
+        <p>p9</p>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <p>19</p>
+        <p>20</P>
+        <p>21</p>
+        <li>22</li>
+    </ul>
+
+    <div class="box wrapper">
+        <p>w01</p>
+        <p>w02</p>
+        <p>w03</p>
+        <p>w04</p>
+        <div>d05</div>
+        <div>d06</div>
+        <p>w07</p>
+        <p>w08</p>
+        <p>w09</p>
+        <p>w10</p>
+        <p>w11</p>
+        <p>w12</p>
+        <p>w13</p>
+        <p>w14</p>
+    </div>
+</body>
+</html>

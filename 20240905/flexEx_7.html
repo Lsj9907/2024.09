@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flexEx7</title>
+    <style>
+        body{
+            margin: 0;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .gnb{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: orange;
+            /* height: 60px; */
+
+            display: flex;
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            text-align: center;
+        }
+        .gnb li{
+            /* height: 100%; */
+            width: 20%;
+        }
+        .gnb li a {
+            text-decoration: none;
+            color: #000;
+            height: 60px; /* 부모는 자식의 높이값을 가져와 본인의 높이갑을 정하기 때문에 a의 높이값이 곧 li의 높이값이 되며 .gnb의 높이값이 됨 */
+            
+            display: block;
+            /* align-content: center; */
+            line-height: 60px;
+        }
+        .gnb li a:hover{
+            background-color: orangered;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="gnb">
+        <li><a href="#">home</a></li>
+        <li><a href="#">company</a></li>
+        <li><a href="#">product</a></li>
+        <li><a href="#">servise</a></li>
+        <li><a href="#">board</a></li>
+    </ul>
+</body>
+</html>

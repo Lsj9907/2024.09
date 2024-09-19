@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flexEx1</title>
+    <style>
+        body{
+            margin: 0;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: #ddd;
+        }
+        .wrapper{
+            display: flex;
+            /* 주축 기준 정렬*/
+            justify-content: center;
+            /* 교차축 기준 정렬 */
+            align-items: center;
+            width: 100vw; height: 100vh;
+        }
+        a:hover{
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <a href="#">텍스트<br>텍스트</a>
+    </div>
+</body>
+</html>

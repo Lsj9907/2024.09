@@ -1,0 +1,279 @@
+@charset "UTF-8";
+body{
+    font-size: 14px;
+    font-weight: 400;
+}
+.firstpage{
+    margin: 0;
+    background-color: #ddd;
+    height: 100vh;
+}
+header {
+    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    position: sticky;
+    top: 60px;
+}
+
+header h1 {
+    margin: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+header .gnb {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: auto 0;
+    margin-left: auto;
+}
+
+header .gnb li {
+    margin-right: 10px;
+}
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    height: 1676px;
+}
+.mainpage h2{
+    margin-top: auto;
+}
+.secondpage{
+    background-color: #FBF3EB;
+    width: 100%; height: 316px;
+    padding: 34px 0 24px 0;
+}
+.owl{
+    height: 316px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.owl1, .owl2{
+    margin: 0 auto;
+    width: 250px;
+    font-size: 14px;
+    text-align: center;
+}
+.thirdpage{
+    height: 110vw;
+    background-color: #fffbd8;
+}
+.thirdpage .elm{
+    height: 2vh;
+    margin: auto 20px;
+    display: flex;
+}
+.thirdpage .elm h2{
+    display: flex;
+    align-items: center;
+}
+.thirdpage .elm p{
+    display: flex;
+    margin: 0 auto;
+    margin-right: 0;
+}
+.thirdpage .elm span{
+    display: flex;
+    align-items: center;
+}
+.thirdpage .elm img{
+    margin: 0 10px;
+}
+.thirdpage .lazy{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.thirdpage .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+.fourthpage {
+    background-color: #b5d5ff;
+}
+.fourthpage .title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vw;
+}
+.soon{
+    display: flex;
+    width: 50
+}
+.fourthpage .son1, .son2 {
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.fivepage{
+    background-color: #ddd;
+    height: 30vh;
+}
+.fivepage .five_title{
+    display: flex;
+    width: 90vw; height: 40px;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.five_title h2{
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+.five_title .span,img{
+    justify-content: right;
+}
+.fivepage .moon{
+    display: flex;
+    width: 30vw;;
+    margin: 50px 60px;
+}
+.fivepage .mon1,.mon2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.moon figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 5px;
+}
+
+.sixpage{
+    height: 45vh;
+    padding: 0;
+    margin: 0
+}
+.sixpage .six_title{
+    display: flex;
+    width: 90vw; height: 40px;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.six_title h2{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    padding: 0px 10px;
+}
+.six_title .span{
+    justify-content: right;
+    margin-top:10px;
+    width: 150px;
+}
+.sixpage .gift {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.official{
+    height: 40vh;
+    background: url("https://placehold.co/900x900/D40056/000?text=img") no-repeat center;
+}
+.official h2,a{
+    height: 40vh;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticktok{
+    height: 40vh;
+    display: flex;
+}
+.ticktok .text{
+    margin-top: 300px;
+    margin-left: 50px;
+}
+.ticktok_list{
+    margin: 200px auto;
+}
+.ticktok_sns{
+    list-style: none;
+    padding: 0;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.lastpage{
+    height: 25vh;
+    padding: 0;
+    margin: 0
+}
+.lastpage .last_title{
+    display: flex;
+    width: 90vw; height: 40px;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.last_title h2{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    padding: 0px 10px;
+}
+.lastpage .event p{
+    text-align: center;
+    margin-top: 40px;
+}
+footer{
+    height: 20vh;
+}
+footer .first{
+    display: flex;
+    width: 90vw; height: 40px;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    border-bottom: 1px #ddd solid;
+}
+footer .first h4{
+    width: 40px;
+}
+footer .first p{
+    width: 800px;
+}
+footer .secon{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 auto;
+    margin-left: 60px;
+}
+footer .secon li{
+    padding: 0 20px;
+}
+footer .thir{
+    margin: 50px 60px;
+}
+footer .four{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 60px;
+}
+footer .four li{
+    margin-right: 10px;
+}

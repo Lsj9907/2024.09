@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flexEx9</title>
+    <style>
+        body{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 14px;
+        }
+        .gallery{/* flex-container*/
+            list-style: none;
+            margin: 0 auto; padding: 0;
+            border: 3px solid #000;
+            width: 80vw;
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery li { /* flex-item */
+            background-color: red;
+            margin: 1%;
+            width: 31.3333%;
+        }
+        .gallery li img{
+            vertical-align: bottom;
+            /* opacity: 0.4; 불투명도 */
+            width: 100%;
+        }
+        .gallery li h2{
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>가로 세로 비율을 유지하는 반응형 박스 </h1>
+    <ul class="gallery">
+        <li>
+            <img src="https://placehold.co/300x200/F1D3CE/fff?text=img1&font=Playfair%20Display" alt="img1"><h2>title1</h2>
+        </li>
+        <li>
+            <img src="https://placehold.co/300x200/F6EACB/fff?text=img2&font=Playfair%20Display" alt="img2"><h2>title2</h2>
+        </li>
+        <li>
+            <img src="https://placehold.co/300x200/EECAD5/fff?text=img3&font=Playfair%20Display" alt="img3"><h2>title3</h2>
+        </li>
+        <li>
+            <img src="https://placehold.co/300x200/D1E9F6/fff?text=img4&font=Playfair%20Display" alt="img4"><h2>title4</h2>
+        </li>
+        <li>
+            <img src="https://placehold.co/300x200/A1D6B2/fff?text=img5&font=Playfair%20Display" alt="img5"><h2>title5</h2>
+        </li>
+        <li>
+            <img src="https://placehold.co/300x200/CEDF9F/fff?text=img6&font=Playfair%20Display" alt="img6"><h2>title6</h2>
+        </li>
+    </ul>
+</body>
+
+</html>

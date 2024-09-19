@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>inline-flex</title>
+    <style>
+        ul{
+            font-weight: bold;         
+            list-style: none;
+            background-color: #ddd;
+            margin: 10px 5px;
+            padding: 10px;
+        }
+        ul li{
+            padding: 10px;
+        }
+        ul li:nth-child(1){ background-color: #D1E9F6;}
+        ul li:nth-child(2){ background-color: #F6EACB;}
+        ul li:nth-child(3){ background-color: #F1D3CE;}
+        ul li:nth-child(4){ background-color: #EECAD5;}
+
+        .box1{ /* flex-container */
+            display: inline-flex;
+        }
+        .box2{ /* flex-container */
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>display:inline-flex 인라인 성격을 가진 채 flex 적용</h2>
+    <ul class="box1">
+        <li class="item1">item1</li>
+        <li class="item2">item2</li>
+        <li class="item3">item3</li>
+        <li class="item4">item4</li>
+    </ul>
+    <ul class="box1">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <ul class="box1">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <h2>display: flex 블록 성격을 가진 채 flex적용</h2>
+    <ul class="box2">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <ul class="box2">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+</body>
+</html>

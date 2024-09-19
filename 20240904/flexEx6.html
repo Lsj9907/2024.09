@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flexEx6</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            display: flex;
+            background-color: #ff9874;
+        }
+        header h1{/* flex-item / flex-container*/
+            background-color: #7695ff;
+            color: #fff;
+            margin: 0;
+            width: 6rem;
+            aspect-ratio: 3/2;/*가로 기준 3의 2 비율 유지 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header form{
+            /* background-color: #ffd7c4; */
+            padding: 10px;
+            /* width: calc(100% - 6rem - 4.5rem); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header form [type]{
+            outline: none;
+            font-size: 1.3rem;
+            font-family: '나눔고딕','맑은 고딕',돋움,sans-serif;
+            border: 1px solid #000;
+            padding: 4px 8px;
+        }
+        header form button[type=submit] {
+            cursor: pointer;
+            background-color: #9dbdff;
+            border-left: none;
+            width: 80px;
+        }
+        header form button[type]:hover{
+            background-color: #000;
+            color: #fff;
+        }
+        header nav{
+            background-color: #9dbdff;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+
+            width: 4.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header> <!--flex-container -->
+        <h1>로고</h1><!-- flex-item /flex-container -->
+        <form><!-- flex-item / flex-conrainer-->
+            <input type="search" placeholder="검색어를 입력하세요"auto>
+            <button type="submit">검색</button>
+        </form>
+        <nav>메뉴</nav><!-- flex-item -->
+    </header>
+
+</html>

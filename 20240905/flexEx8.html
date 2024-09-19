@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flexEx8</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            margin: 0 auto;
+            padding: 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            border: 2px solid #000;
+            height: 480px;
+            width: 620px;
+            
+        }
+        p{
+            display: flex;
+            flex-direction: column;
+            background-color: #000;
+            color: #fff;
+            margin: 5px;
+    </style>
+</head>
+
+<body>
+    <h1>상하 정렬 갤러리</h1>
+    <!-- https://placehold.co/가로x세로/배경생/폰트색?text=내용&font=서체명 -->
+    <div class="container">
+        <p><img src="https://placehold.co/300x200/F1D3CE/fff?text=img1&font=lora" alt="img1">title1</p>
+        <p><img src="https://placehold.co/300x200/F6EACB/fff?text=img2&font=lora" alt="img2">title2</p>
+        <p><img src="https://placehold.co/300x200/EECAD5/fff?text=img3&font=lora" alt="img3">title3</p>
+        <p><img src="https://placehold.co/300x200/D1E9F6/fff?text=img4&font=lora" alt="img4">title4</p>
+    </div>
+</body>
+</html>

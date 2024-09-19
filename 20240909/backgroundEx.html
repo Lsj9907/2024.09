@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>backgroundEx</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        fieldset{
+            width: 500px; height: 300px;
+            margin: 50px auto;
+            border: 2px solid #000;
+            border-radius: 30px;
+        }
+        fieldset figure{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        fieldset figure input{
+            margin: 10px auto;
+            padding: 5px;
+            border-radius: 50px 50px ;
+            width: 300px; height: 40px;
+        }
+        fieldset figure input#user{
+            color: lightpink;
+            background-image: url(./svg/user-solid.svg);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: 20px;
+            padding-left: 70px;
+            font-size: 1.2rem;
+        }
+        fieldset figure input#userEmail{
+            color: lightpink;
+            background-image: url(./svg/at-solid.svg);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: 20px;
+            padding-left: 70px;
+            font-size: 1.2rem;
+        }
+        fieldset figure input#useraddress{
+            color: lightpink;
+            background-image: url(./svg/address-card-solid.svg);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: 20px;
+            padding-left: 70px;
+            font-size: 1.2rem;
+        }
+        fieldset figure input::placeholder{
+            color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <figure><input type="text" name="user" id="user" placeholder="이름을 입력하세요" autofocus></figure>
+            <figure><input type="text" name="userEmail" id="userEmail" placeholder="이메일을 입력하세요"></figure>
+            <figure><input type="text" name="useraddress" id="useraddress" placeholder="연락처를 입력해주세요"></figure>
+        </fieldset>
+    </form>
+</body>
+</html>

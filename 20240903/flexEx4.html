@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flexEx4</title>
+    <style>
+       body {
+        margin: 0;
+       }
+       /*  .wrapper {
+        background-color: #ddd;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+       }
+        .wrapper footer {
+        background-color: orange;
+        width: 1400px; 
+        width: calc(72.9166vw - 80px); 1400/1920
+        width: 72.9166vw;
+        margin: 0 auto;
+        padding: 10px 40px;
+        box-sizing: border-box; width(padding+border) + margin 
+       }
+        */
+        .wrapper{/* flex-container */
+            background-color: #ddd;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper footer {/* flex-item */
+            background-color: orchid;
+            width: 72.9166vw;
+            padding: 10px 40px;
+            box-sizing: border-box;
+
+            /* align-self: flex-end; 플레스 아이템에 직접 적용 */
+            
+            /*
+            플레스 아이템을 직접 적용
+            margin을 통해 개별적으로 위치 지정 가능. 더 섬세하게 조정가능
+            */
+            /* margin: auto; center center*/
+            /* margin-left :auto; 여백이 왼쪽으로 들어가기 때문에 아이템은 오른쪽 배치 */
+            /* margin-right: auto; 여백이 오른쪽으로 들어가기 때문에 아이템은 왼족 배치*/
+            /* margin-bottom: auto; 여백이 아래쪽으로 들어가기 때문에 아이템은 위쪽 배치 */
+            /* margin-top: auto; 여백이 위쪽으로 들어가기 때문에 아이템이 아래쪽 배치 */
+            /* margin: 5rem auto 2rem;
+            margin: 200px auto 100px; */
+            
+            margin: auto auto 0;
+        }
+       .wrapper footer h2 {
+        margin: 0;/* 일반적인 흐름일 때 마진 상쇄 현상 */
+       }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <footer>
+            <h2>footer</h2>
+            <p>하루가 하나의, 단체로 놀게 자기는 한다. 잘못으로 낭떠러지와 문화로, 아래를 작품도 국갈 않다. 설명하다 소년이 집이다, 요금에서 농민에서 줄이 가냐. 없어 눈이 함이 별로 안녕히 큰 가치를 섬에, 소제하게 되어. 논지와 작기 편안하기 삼기 결과에 스케줄이다 않아야 들어섭니다. 연기를 따를 주택으로 꺼내는 비행기는 일 힘겹는 반을 하고, 오래가게 아니다. 그러나 직접이라 마련 것 20일 본다. 감독을 사람 덥은 휴가는 하다 대하여. 민주주의로 못 투신사에 전문에 대군의 준 작는 정부의 있은 그렇우다.</p>
+        </footer>
+    </div>
+</body>
+</html>

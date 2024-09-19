@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flexEx5</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        /* form{
+            display: flex;
+            justify-content: center;
+        }*/
+        form .container{
+            /* border: 3px solid #000; */
+            list-style: none;
+            padding: 0;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form .container li {/* flex-container */
+            display: flex;
+            margin: 10px 0;
+        }
+        form .container li label {/* flex-item :inline이 아님. felx의 성격을 가짐 (width height 적용 가능) */
+            background-color: #9dbdff;
+            width: 10rem; /* block flex container 만 값을 가질 수 있음 inline은 값을 가질 수 없음 */
+            /* display: block; */
+            padding: 6px 4px;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        form .container li input[type=text] {/* flex-item*/
+            padding: 6px 4px;
+            outline: none;
+            margin-left: 6px;
+            width: 12rem;
+            border: 1px solid#000;
+        }
+        form .container li input[type=text]::placeholder{
+            color: #9dbdff;
+        }
+        #flex3, #flex4, #flex5 {
+            height: 5rem;;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>각 폼 제목의 세로 중앙 정렬</h1>
+    <form>
+        <ul class="container">
+            <li>
+                <label for="flex1">채널키워드</label>
+                <input type="text" id="flex1" placeholder="플렉스 적용하기" autofocus>
+            </li>
+            <li>
+                <label for="flex2">채널키워드</label>
+                <input type="text" id="flex2" placeholder="플렉스 적용하기">
+            </li>
+            <li>
+                <label for="flex3">채널 키워드 채널 키워드</label>
+                <input type="text" id="flex3" placeholder="플렉스 적용하기">
+            </li>
+            <li>
+                <label for="flex4">채널 키워드 clannel keyword</label>
+                <input type="text" id="flex4" placeholder="플렉스 적용하기">
+            </li>
+            <li>
+                <label for="flex5">clannel keyword 채널 키워드</label>
+                <input type="text" id="flex5" placeholder="플렉스 적용하기">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flex7_align-content</title>
+    <style>
+        .wrapper{
+            border: 6px solid #000;
+            width: 80vw;
+            margin: 2vw auto;
+            display: flex;/* 생략된 기본값 row nowrap*/
+         }
+         
+         .wrapper .item{ /* flex item */
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+            color: #000;
+         }
+         /* align-items: stretch와 높이 값이 함께 적용된 경우 높이 값이 우선 */
+         .wrapper .item1{background-color: #D1E9F6;}
+         .wrapper .item2{background-color: #F6EACB;}
+         .wrapper .item3{background-color: #F1D3CE;}
+         .wrapper .item4{background-color: #EECAD5;}
+         #container{
+            height: 50vh;
+            justify-content: space-between;
+            align-items: center;
+         }
+         #container .item1{
+            /* 자식인 플렉스 아이템에 적용. 교차축 기준 개별 배치 */
+            align-self: stretch;
+        }
+         #container .item2{
+            align-self: flex-start;
+        }
+         #container .item3{
+            align-self: center;
+            width: 20%; height: 20%
+        }
+         #container .item4{align-self: flex-end;}
+    </style>
+</head>
+
+<body>
+    <h1>flex7: align-content</h1>
+    <div class="wrapper" id="container"><!-- flex container-->
+        <div class="item item1">item1</div> <!--flex item-->
+        <div class="item item2">item2</div> <!--flex item-->
+        <div class="item item3">item3</div> <!--flex item-->
+        <div class="item item4">item4</div> <!--flex item-->
+    </div>
+</body>
+</html>

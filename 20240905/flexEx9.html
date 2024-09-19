@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flexEx9</title>
+    <style>
+        body {
+            margin: 0 auto;
+            text-transform: capitalize;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .gallery{
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            flex-flow: wrap row;
+            border: 3px solid #000;
+            width: 950px; height: 480px;
+            justify-content: center;
+            align-content: center;
+            gap: 10px;;
+        }
+        .gallery li{
+            list-style: none;
+            display: block;
+        }
+        .gallery li img{
+            display: block;
+        }
+        .gallery li figcaption{
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>가로 세로 비율을 유지하는 반응형 박스 </h1>
+    <ul class="gallery">
+        <li><img src="https://placehold.co/300x200/F1D3CE/fff?text=img1&font=lora" alt="img1"><figcaption>title1</figcaption></li>
+        <li><img src="https://placehold.co/300x200/F6EACB/fff?text=img2&font=lora" alt="img2"><figcaption>title2</figcaption></li>
+        <li><img src="https://placehold.co/300x200/EECAD5/fff?text=img3&font=lora" alt="img3"><figcaption>title3</figcaption></li>
+        <li><img src="https://placehold.co/300x200/D1E9F6/fff?text=img4&font=lora" alt="img4"><figcaption>title4</figcaption></li>
+        <li><img src="https://placehold.co/300x200/A1D6B2/fff?text=img5&font=lora" alt="img5"><figcaption>title5</figcaption></li>
+        <li><img src="https://placehold.co/300x200/CEDF9F/fff?text=img6&font=lora" alt="img6"><figcaption>title6</figcaption></li>
+    </ul>
+</body>
+
+</html>
